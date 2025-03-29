@@ -20,36 +20,13 @@
 
         /* Main Content Container */
         .container {
-            position: relative;
             max-width: 80%;
             margin: 0 auto;
             background: #202020;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-            overflow: hidden;
             min-height: 450px;
-        }
-
-        /* Background Image with 50% Opacity */
-        .container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('images/Flareon_sort_hvid.png');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.5;
-            z-index: 0;
-        }
-
-        /* Ensures text stays visible */
-        .container * {
-            position: relative;
-            z-index: 1;
         }
 
         /* Headline Box */
