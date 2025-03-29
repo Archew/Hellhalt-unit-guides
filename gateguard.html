@@ -14,7 +14,7 @@
             color: white;
         }
 
-        h1, h2, h3 {
+        h1, h2 {
             color: white;
         }
 
@@ -29,7 +29,7 @@
             min-height: 450px;
         }
 
-        /* Headline Box */
+        /* Headline Box (for Main Title) */
         .headline-box {
             background: rgba(0, 123, 255, 0.7);
             border: 2px solid rgba(0, 123, 255, 0.9);
@@ -39,20 +39,27 @@
             margin-bottom: 20px;
         }
 
-        /* List Styling */
-        ul {
-            list-style: none;
-            padding: 0;
+        /* Blue Box for Method Headlines */
+        .method-title {
+            background: rgba(0, 123, 255, 0.7);
+            border-radius: 6px;
+            padding: 10px;
+            margin: 20px auto;
+            display: inline-block;
+            width: 80%;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Standard Text */
+        p, ul {
             text-align: left;
             margin: 0 auto;
             max-width: 600px;
         }
 
         li {
-            background-color: rgba(0, 123, 255, 0.7);
-            padding: 10px;
             margin: 8px 0;
-            border-radius: 6px;
         }
 
         strong {
@@ -77,7 +84,7 @@
             <h1>Gateguard Guide</h1>
         </div>
 
-        <h1>METHOD 1: HELP TEAMMATE HOLD LVL 10, HOLD LVL 12 and 14</h1>
+        <h1 class="method-title">METHOD 1: HELP TEAMMATE HOLD LVL 10, HOLD LVL 12 and 14</h1>
         <ul>
             <li><strong>Level 1:</strong> 5 <strong>Gateguards</strong></li>
             <li><strong>Level 2:</strong> 6 <strong>Gateguards</strong>. If you sent lvl 1 can push up to 7-1, if didn’t 5-2</li>
@@ -90,10 +97,10 @@
             <li><strong>Level 12-14:</strong> Upgrade <strong>Harbingers</strong> to <strong>Heralds</strong>, move build back.</li>
         </ul>
 
-        <h1>METHOD 2: BIG STACK STRATEGY</h1>
+        <h1 class="method-title">METHOD 2: BIG STACK STRATEGY</h1>
         <p>If you expect to die on level 10, stack more units early. Build on your teammate’s side all game, pulling waves into your lane.</p>
 
-        <h1>METHOD 3: SOLO GATEGUARD SPAWN</h1>
+        <h1 class="method-title">METHOD 3: SOLO GATEGUARD SPAWN</h1>
         <p>Try to hold by yourself, upgrade as needed, and push cautiously.</p>
 
         <h2>Youtube Examples</h2>
