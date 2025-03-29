@@ -29,14 +29,33 @@
             min-height: 450px;
         }
 
-        /* Headline Box (for Main Title) */
-        .headline-box {
+        /* Top Bar (Return Button + Headline) */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background: rgba(0, 123, 255, 0.7);
             border: 2px solid rgba(0, 123, 255, 0.9);
             padding: 15px;
             border-radius: 8px;
-            display: inline-block;
             margin-bottom: 20px;
+        }
+
+        /* Return Button */
+        .return-btn {
+            background-color: rgba(0, 86, 179, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .return-btn:hover {
+            background-color: rgba(0, 60, 150, 0.9);
+            transform: scale(1.05);
         }
 
         /* Blue Box for Method Headlines */
@@ -80,7 +99,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="headline-box">
+        <!-- Top Bar with Return Button and Headline -->
+        <div class="top-bar">
+            <a href="index.html" class="return-btn">← Return to Index</a>
             <h1>Gateguard Guide</h1>
         </div>
 
