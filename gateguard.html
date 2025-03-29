@@ -5,66 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gateguard Guide</title>
     <style>
+        /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
+            background-color: #181818;
+            text-align: center;
+            padding: 20px;
+            color: white;
         }
-        h1, h2 {
-            color: #333;
+
+        h1, h2, h3 {
+            color: white;
         }
-        h1 {
-            font-size: 28px;
+
+        /* Main Content Container */
+        .container {
+            position: relative;
+            max-width: 80%;
+            margin: 0 auto;
+            background: #202020;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            min-height: 450px;
         }
-        h2 {
-            font-size: 24px;
+
+        /* Background Image with 50% Opacity */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/Flareon_sort_hvid.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: 0;
         }
-        h3 {
-            font-size: 20px;
-            color: #444;
+
+        /* Ensures text stays visible */
+        .container * {
+            position: relative;
+            z-index: 1;
         }
-        p, li {
-            font-size: 16px;
+
+        /* Headline Box */
+        .headline-box {
+            background: rgba(0, 123, 255, 0.7);
+            border: 2px solid rgba(0, 123, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
         }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        li {
+            background-color: rgba(0, 123, 255, 0.7);
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 6px;
+        }
+
         strong {
+            color: #ff4f4f;
+        }
+
+        /* Link Styling */
+        a {
+            color: white;
+            text-decoration: none;
             font-weight: bold;
-            color: #d9534f;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>METHOD 1: HELP TEAMMATE HOLD LVL 10, HOLD LVL 12 and 14</h1>
-    
-    <ul>
-        <li><strong>Level 1:</strong> 5 <strong>Gateguards</strong></li>
-        <li><strong>Level 2:</strong> 6 <strong>Gateguards</strong>. If you sent lvl 1 can push up to 7-1, if didn’t 5-2</li>
-        <li><strong>Level 3:</strong> 9 <strong>Gateguards</strong></li>
-        <li><strong>Level 4:</strong> 11 <strong>Gateguards</strong> or get an upgraded blue one, push 9/4 taunt units in</li>
-        <li><strong>Level 5:</strong> You stop pushing. No more pushing until after 7. You also start upgrading the <strong>Gateguards</strong> to <strong>Heralds</strong> slowly but surely. Which ones don’t matter too much, as long as they are next to each other, personally I upgrade middle and outwards.</li>
-        <li><strong>Level 7:</strong> After level 7 you start pushing lumber.</li>
-        <li><strong>Level 8:</strong> You are still pushing lumber, what you used to hold level 7 should hold level 8. You build <strong>Harbinger</strong> (the 1-time upgrade <strong>Gateguard</strong>) on teammate. Try to get 9/8.</li>
-        <li><strong>Level 9:</strong> You still build on teammate’s side (blue gates), try to clump them together so you can easily pull them towards your lane. You need to do this to not leak big on 9 unless you have no blue gates on your side, then the X taunt will work.</li>
-        <li><strong>Level 10:</strong> You already built a lot on your teammate. If you are confident you guys hold 10 easily, you can start pushing 9/9 or 9/10. You do this now and not before 9 because you want to leak as little as possible on 9. You also move 1-2 <strong>Heralds</strong> to your teammate from your spawn build, 1 you can full sell, 2 if your teammate can also full sell.</li>
-        <li><strong>Level 11:</strong> You get your teammate to full sell 1 <strong>Herald</strong>, you sell the other. You move all your stacked blue <strong>Harbingers</strong> back. You make sure you don’t upgrade any of these to <strong>Herald</strong> this round, and just upgrade what you have in your spawn so you can move later.</li>
-        <li><strong>Level 12:</strong> Upgrade your <strong>Harbingers</strong> to <strong>Heralds</strong></li>
-        <li><strong>Level 13:</strong> Upgrade your <strong>Harbingers</strong> to <strong>Heralds</strong></li>
-        <li><strong>Level 14:</strong> Move your build back to standard position to be stronger on 14.</li>
-    </ul>
+    <div class="container">
+        <div class="headline-box">
+            <h1>Gateguard Guide</h1>
+        </div>
 
-    <h1>METHOD 2: OMG WE'RE GONNA DIE 10 BUT ALSO WEAK 12 TEAMMATE NEEDS BIG BIG STACK SO I BIG STACK AND NEED BAILOUT ON 14</h1>
-    
-    <p>If you know you are gonna die with a stack of only wave 8 -> 10 + 2 <strong>Heralds</strong> on 10, consider stacking more units. However, if you do this, starting spawn is not recommended. You can build on your teammate’s side all game long and pull each wave until level 10 ends, and then put all units in spawn for 12 if you need a good hold there. Make sure to use taunts to get in deep and kill faster.</p>
+        <h1>METHOD 1: HELP TEAMMATE HOLD LVL 10, HOLD LVL 12 and 14</h1>
+        <ul>
+            <li><strong>Level 1:</strong> 5 <strong>Gateguards</strong></li>
+            <li><strong>Level 2:</strong> 6 <strong>Gateguards</strong>. If you sent lvl 1 can push up to 7-1, if didn’t 5-2</li>
+            <li><strong>Level 3:</strong> 9 <strong>Gateguards</strong></li>
+            <li><strong>Level 4:</strong> 11 <strong>Gateguards</strong> or get an upgraded blue one, push 9/4 taunt units in</li>
+            <li><strong>Level 5:</strong> Start upgrading to <strong>Heralds</strong>. Upgrade middle first.</li>
+            <li><strong>Level 7:</strong> Start pushing lumber.</li>
+            <li><strong>Level 8:</strong> Build <strong>Harbinger</strong> on teammate’s side.</li>
+            <li><strong>Level 10:</strong> Move 1-2 <strong>Heralds</strong> to teammate for full sell.</li>
+            <li><strong>Level 12-14:</strong> Upgrade <strong>Harbingers</strong> to <strong>Heralds</strong>, move build back.</li>
+        </ul>
 
-    <h1>METHOD 3: BE A STUPID SELFISH SOLOPLAYER WHO ONLY PLAYS GATEGUARD SPAWN BUT WE'LL TRY TO MAKE IT WORK</h1>
-    
-    <p>Well yes.. the title says it all, doesn’t it? You can make it work. The beginning is the same as METHOD 1, but you try to hold because you think you can. Maybe you rolled lifesteal, speed troll, or for some reason, you just want to play solo or you think you can hold level 10. OK, then don’t stack your teammate. Maybe stay low push. 9/6? You will still leak probably <strong>:shrug:</strong> but that’s okay. We are a solo player and we will die a solo player!!</p>
+        <h1>METHOD 2: BIG STACK STRATEGY</h1>
+        <p>If you expect to die on level 10, stack more units early. Build on your teammate’s side all game, pulling waves into your lane.</p>
 
-    <p><strong>Also, move back on level 14.</strong></p>
+        <h1>METHOD 3: SOLO GATEGUARD SPAWN</h1>
+        <p>Try to hold by yourself, upgrade as needed, and push cautiously.</p>
 
-        <h2>Youtube Examples to Watch</h2>
-    <p>video demonstrations of people playing gates here:</p>
-    <ul>
-        <li><a href="#">Example Video 1</a></li>
-    </ul>
+        <h2>Youtube Examples</h2>
+        <ul>
+            <li><a href="#">Example Video 1</a></li>
+        </ul>
+    </div>
 </body>
 </html>
