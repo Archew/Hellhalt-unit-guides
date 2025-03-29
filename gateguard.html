@@ -13,121 +13,101 @@
             padding: 20px;
             color: white;
         }
-
+        
         h1, h2 {
             color: white;
         }
 
-        /* Main Content Container */
+        /* Main Container */
         .container {
+            position: relative;
             max-width: 80%;
             margin: 0 auto;
             background: #202020;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
             min-height: 450px;
         }
 
-        /* Top Bar (Return Button + Headline) */
-        .top-bar {
+        /* Header Bar */
+        .header-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background: rgba(0, 123, 255, 0.7);
-            border: 2px solid rgba(0, 123, 255, 0.9);
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Return Button */
-        .return-btn {
-            background-color: rgba(0, 86, 179, 0.9);
+        .header-bar a {
             color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+            background-color: rgba(0, 86, 179, 0.9);
+            padding: 10px 15px;
+            border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
-        .return-btn:hover {
+        .header-bar a:hover {
             background-color: rgba(0, 60, 150, 0.9);
             transform: scale(1.05);
         }
 
-        /* Blue Box for Method Headlines */
-        .method-title {
+        /* Headline Styling */
+        .headline-box {
             background: rgba(0, 123, 255, 0.7);
-            border-radius: 6px;
             padding: 10px;
-            margin: 20px auto;
+            border-radius: 8px;
             display: inline-block;
-            width: 80%;
-            font-size: 22px;
+            margin-bottom: 15px;
+            font-size: 20px;
             font-weight: bold;
         }
 
-        /* Standard Text */
-        p, ul {
+        ul {
             text-align: left;
+            max-width: 80%;
             margin: 0 auto;
-            max-width: 600px;
+            padding: 0;
         }
 
         li {
-            margin: 8px 0;
-        }
-
-        strong {
-            color: #ff4f4f;
-        }
-
-        /* Link Styling */
-        a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Top Bar with Return Button and Headline -->
-        <div class="top-bar">
-            <a href="Index.html" class="return-btn">← Return to Index</a>
+        <div class="header-bar">
             <h1>Gateguard Guide</h1>
+            <a href="index.html">Return to Index</a>
         </div>
-
-        <h1 class="method-title">METHOD 1: HELP TEAMMATE HOLD LVL 10, HOLD LVL 12 and 14</h1>
+        
+        <div class="headline-box">METHOD 1: HELP TEAMMATE HOLD LVL 10, HOLD LVL 12 and 14</div>
         <ul>
             <li><strong>Level 1:</strong> 5 <strong>Gateguards</strong></li>
             <li><strong>Level 2:</strong> 6 <strong>Gateguards</strong>. If you sent lvl 1 can push up to 7-1, if didn’t 5-2</li>
             <li><strong>Level 3:</strong> 9 <strong>Gateguards</strong></li>
             <li><strong>Level 4:</strong> 11 <strong>Gateguards</strong> or get an upgraded blue one, push 9/4 taunt units in</li>
-            <li><strong>Level 5:</strong> Start upgrading to <strong>Heralds</strong>. Upgrade middle first.</li>
-            <li><strong>Level 7:</strong> Start pushing lumber.</li>
-            <li><strong>Level 8:</strong> Build <strong>Harbinger</strong> on teammate’s side.</li>
-            <li><strong>Level 10:</strong> Move 1-2 <strong>Heralds</strong> to teammate for full sell.</li>
-            <li><strong>Level 12-14:</strong> Upgrade <strong>Harbingers</strong> to <strong>Heralds</strong>, move build back.</li>
+            <li><strong>Level 5:</strong> You stop pushing. No more pushing until after 7. You also start upgrading the <strong>Gateguards</strong> to <strong>Heralds</strong> slowly but surely.</li>
+            <li><strong>Level 7:</strong> After level 7 you start pushing lumber.</li>
+            <li><strong>Level 8:</strong> You are still pushing lumber.</li>
+            <li><strong>Level 9:</strong> You still build on teammate’s side.</li>
+            <li><strong>Level 10:</strong> You already built a lot on your teammate.</li>
         </ul>
-
-        <h1 class="method-title">METHOD 2: BIG STACK STRATEGY</h1>
-        <p>If you expect to die on level 10, stack more units early. Build on your teammate’s side all game, pulling waves into your lane.</p>
-
-        <h1 class="method-title">METHOD 3: SOLO GATEGUARD SPAWN</h1>
-        <p>Try to hold by yourself, upgrade as needed, and push cautiously.</p>
-
-        <h2>Youtube Examples</h2>
-        <ul>
-            <li><a href="#">Example Video 1</a></li>
-        </ul>
+        
+        <div class="headline-box">METHOD 2: OMG WE'RE GONNA DIE 10 BUT ALSO WEAK 12 TEAMMATE NEEDS BIG BIG STACK SO I BIG STACK AND NEED BAILOUT ON 14</div>
+        <p>If you know you are gonna die with a stack of only wave 8 -> 10 + 2 <strong>Heralds</strong> on 10, consider stacking more units.</p>
+        
+        <div class="headline-box">METHOD 3: BE A STUPID SELFISH SOLOPLAYER WHO ONLY PLAYS GATEGUARD SPAWN BUT WE'LL TRY TO MAKE IT WORK</div>
+        <p>The beginning is the same as METHOD 1, but you try to hold because you think you can.</p>
     </div>
 </body>
 </html>
