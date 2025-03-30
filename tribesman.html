@@ -3,23 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribesman</title>
+    <title>Tribesman Guide</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-            flex-direction: column;
-            text-align: center;
             font-family: Arial, sans-serif;
+            background-color: #181818;
+            text-align: center;
+            padding: 20px;
+            color: white;
         }
-        h1 {
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            background: #202020;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            min-height: 450px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 123, 255, 0.7);
+            border: 2px solid rgba(0, 123, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
             margin-bottom: 20px;
-            color: #333;
         }
+
+        .return-btn {
+            background-color: rgba(0, 86, 179, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .return-btn:hover {
+            background-color: rgba(0, 60, 150, 0.9);
+            transform: scale(1.05);
+        }
+
+        .eevee-img {
+            height: 90px;
+            width: auto;
+        }
+
+        .method-title {
+            background: rgba(0, 123, 255, 0.7);
+            border-radius: 6px;
+            padding: 10px;
+            margin: 20px auto;
+            display: inline-block;
+            width: 80%;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
         iframe {
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -27,13 +73,21 @@
     </style>
 </head>
 <body>
-    <h1>Tribesman YouTube Guide</h1>
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/cvISe313XVI?start=181" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <div class="container">
+        <div class="top-bar">
+            <a href="Index.html" class="return-btn">← Return to Index</a>
+            <img src="images/Flareon_sort_hvid.png" alt="Eevee" class="eevee-img">
+            <h1>Tribesman Guide</h1>
+        </div>
+
+        <h1 class="method-title">Tribesman Youtube Guide</h1>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/cvISe313XVI?start=181" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
