@@ -7,116 +7,140 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         h1, h2, h3 {
-            color: #333;
+            color: #ffcc00;
         }
         pre {
-            background: #f4f4f4;
+            background: #333;
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
+            color: #e0e0e0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Mining Guide</h1>
-    <p>This guide will walk you through the basics of playing mines efficiently in the game.</p>
+    <div class="container">
+        <h1>Welcome to the Mining Guide</h1>
+        <p>This guide will walk you through the basics of playing mines efficiently in the game.</p>
 
-    <h2>Unopposed Values to Keep in Mind</h2>
-    <p>If you don't know what unopposed is, it refers to the value you must be above on a level to earn gold from all the creeps. This value is 40% of the "recommended" value given by the game but may vary by ±5 gold.</p>
+        <h2>Unopposed Values to Keep in Mind</h2>
+        <p>If you don't know what unopposed is, it refers to the value you must be above on a level to earn gold from all the creeps. This value is 40% of the "recommended" value given by the game but may vary by ±5 gold.</p>
 
-    <ul>
-        <li><strong>Level 2:</strong> Need 280 value</li>
-        <li><strong>Level 3:</strong> Need 465 value</li>
-        <li><strong>Level 4:</strong> Need 720 value</li>
-    </ul>
+        <ul>
+            <li><strong>Level 2:</strong> Need 280 value</li>
+            <li><strong>Level 3:</strong> Need 465 value</li>
+            <li><strong>Level 4:</strong> Need 720 value</li>
+        </ul>
 
-    <p>After Level 4, you generally won’t have to worry about unopposed values.</p>
+        <p>After Level 4, you generally won’t have to worry about unopposed values.</p>
 
-    <h2>General Tips</h2>
-    <p>Make sure you <strong>TAUNT</strong> the mines that need to be focused, especially on Level 4 and 5. This applies aggro, preventing units from running past and triggering the wrong mines.</p>
+        <h2>General Tips</h2>
+        <p>Make sure you <strong>TAUNT</strong> the mines that need to be focused, especially on Level 4 and 5. This applies aggro, preventing units from running past and triggering the wrong mines.</p>
 
-    <h2>Level-by-Level Strategy</h2>
+        <h2>Level-by-Level Strategy</h2>
 
-    <h3>Level 1</h3>
-    <ul>
-        <li>Push 4/1 (3 wisp + 1 lumber).</li>
-        <li>Build 250 value: 3 medium mines, 1 small mine.</li>
-        <li>The small mine should NOT be at the end; place it as the 2nd or 3rd mine to delay units.</li>
-    </ul>
+        <h3>Level 1</h3>
+        <ul>
+            <li>Push 4/1 (3 wisp + 1 lumber).</li>
+            <li>Build 250 value: 3 medium mines, 1 small mine.</li>
+            <li>The small mine should NOT be at the end; place it as the 2nd or 3rd mine to delay units.</li>
+        </ul>
 
-    <h3>Level 2</h3>
-    <p>Push depends on game speed:</p>
-    <ul>
-        <li><strong>Fast Game:</strong> Build 5 medium mines. Push 5-2 going into farm upgrade without stopping your push. May leak slightly due to RNG, but that’s fine as a miner.</li>
-        <li><strong>Slow Game:</strong> Go 5-1, upgrade farm first, and hold with 280 value by adding 3 small mines.</li>
-    </ul>
+        <h3>Level 2</h3>
+        <p>Push depends on game speed:</p>
+        <ul>
+            <li><strong>Fast Game:</strong> Build 5 medium mines. Push 5-2 going into farm upgrade without stopping your push. May leak slightly due to RNG, but that’s fine as a miner.</li>
+            <li><strong>Slow Game:</strong> Go 5-1, upgrade farm first, and hold with 280 value by adding 3 small mines.</li>
+        </ul>
 
-    <h3>Level 3</h3>
-    <ul>
-        <li>Ensure you have over 465 value.</li>
-        <li>End your build with an ultra mine to explode the final clump of units.</li>
-        <li>Fast game: Go up to 650 value by upgrading 2 medium mines to ultras.</li>
-    </ul>
+        <h3>Level 3</h3>
+        <ul>
+            <li>Ensure you have over 465 value.</li>
+            <li>End your build with an ultra mine to explode the final clump of units.</li>
+            <li>Fast game: Go up to 650 value by upgrading 2 medium mines to ultras.</li>
+        </ul>
 
-    <h3>Level 4</h3>
-    <ul>
-        <li>Push 9/4 (or 9/5 if the game is slow and you're experienced).</li>
-        <li>Alternate ultra and medium mines to handle low-health units.</li>
-        <li>Build 1060 value mines: Ultra → Medium → Ultra → Ultra → Medium → Ultra → Medium.</li>
-    </ul>
+        <h3>Level 4</h3>
+        <ul>
+            <li>Push 9/4 (or 9/5 if the game is slow and you're experienced).</li>
+            <li>Alternate ultra and medium mines to handle low-health units.</li>
+            <li>Build 1060 value mines: Ultra → Medium → Ultra → Ultra → Medium → Ultra → Medium.</li>
+        </ul>
 
-    <h3>Level 5</h3>
-    <ul>
-        <li>Push 9/5 if you don’t expect a send. Wyverns make this level tough.</li>
-        <li>Upgrade medium mines to ultras—aim for 6 ultra mines by Level 6.</li>
-        <li>Add 4 small mines at the beginning to delay and stack units for later explosions.</li>
-    </ul>
+        <h3>Level 5</h3>
+        <ul>
+            <li>Push 9/5 if you don’t expect a send. Wyverns make this level tough.</li>
+            <li>Upgrade medium mines to ultras—aim for 6 ultra mines by Level 6.</li>
+            <li>Add 4 small mines at the beginning to delay and stack units for later explosions.</li>
+        </ul>
 
-    <h3>Level 6</h3>
-    <ul>
-        <li>Easy level. Push 9/8 if there’s enough time.</li>
-        <li>Add a few delay mines if necessary, but usually not required.</li>
-    </ul>
+        <h3>Level 6</h3>
+        <ul>
+            <li>Easy level. Push 9/8 if there’s enough time.</li>
+            <li>Add a few delay mines if necessary, but usually not required.</li>
+        </ul>
 
-    <h3>Level 7</h3>
-    <ul>
-        <li>Build 7 ultra mines and use small mines to delay and stack units.</li>
-    </ul>
+        <h3>Level 7</h3>
+        <ul>
+            <li>Build 7 ultra mines and use small mines to delay and stack units.</li>
+        </ul>
 
-    <h3>Level 8</h3>
-    <ul>
-        <li>In a good scenario, you need 9 ultra mines—usually safer with 10.</li>
-    </ul>
+        <h3>Level 8</h3>
+        <ul>
+            <li>In a good scenario, you need 9 ultra mines—usually safer with 10.</li>
+        </ul>
 
-    <h3>Level 9</h3>
-    <ul>
-        <li>Preferred push: 9/10 max. 9/11 is risky and may reduce team gold from leaks.</li>
-        <li>Help your teammate if they need it. Ask if they have "fullsell" and build big tank units to assist with Level 10.</li>
-    </ul>
+        <h3>Level 9</h3>
+        <ul>
+            <li>Preferred push: 9/10 max. 9/11 is risky and may reduce team gold from leaks.</li>
+            <li>Help your teammate if they need it. Ask if they have "fullsell" and build big tank units to assist with Level 10.</li>
+        </ul>
 
-    <h3>Level 10</h3>
-    <ul>
-        <li>You won’t hold this level alone.</li>
-        <li>Consider adding small delay mines to avoid backstabbing your teammate.</li>
-    </ul>
+        <h3>Level 10</h3>
+        <ul>
+            <li>You won’t hold this level alone.</li>
+            <li>Consider adding small delay mines to avoid backstabbing your teammate.</li>
+        </ul>
 
-    <h3>Level 11 and Beyond</h3>
-    <ul>
-        <li>Focus on upgrading to ultra mines while helping your teammate if needed.</li>
-        <li>Stick to 3 vertical build lines—avoid spreading horizontally.</li>
-        <li>Once you reach 8000–9500 mine value or a bit less, prioritize helping your teammate’s lane until Level 17 ends.</li>
-    </ul>
+        <h3>Level 11 and Beyond</h3>
+        <ul>
+            <li>Focus on upgrading to ultra mines while helping your teammate if needed.</li>
+            <li>Stick to 3 vertical build lines—avoid spreading horizontally.</li>
+            <li>Once you reach 8000–9500 mine value or a bit less, prioritize helping your teammate’s lane until Level 17 ends.</li>
+        </ul>
 
-    <h3>Post-Level 13 Strategy</h3>
-    <ul>
-        <li>After Level 13 (especially Level 14), consider pushing beyond 9/10 if your setup allows.</li>
-        <li>Adjust your build if you roll special units like plague.</li>
+        <h3>Post-Level 17 Strategy</h3>
+        <ul>
+            <li>It is time to stop playing mines. Sack small mines into your seraphim and prepare your build to hold Level 18. Coordinate with your teammate to survive.</li>
+        </ul>
+    </div>
+</body>
+</html>
+
     </ul>
     <h3>Post-Level 17 Strategy</h3>
     <ul>
